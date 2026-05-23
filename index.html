@@ -7,21 +7,6 @@
     <meta name="description" content="A collection of fast, minimal, privacy-first tools designed to get work done without friction.">
     <meta name="google-site-verification" content="rbMDsZDEnPXvV0H4Tf0EHHgfdPQy2doXIuO_JNCV9qM" />
     <style>
-        :root {
-            --bg: #ffffff;
-            --text: #000000;
-            --border: #000000;
-            --card-hover: #000000;
-            --tag-bg: #f0f0f0;
-        }
-
-        body.dark-mode {
-            --bg: #1b1a1a;
-            --text: #f0f0f0;
-            --border: #f0f0f0;
-            --card-hover: #f0f0f0;
-            --tag-bg: #333333;
-        }
 
         body {
             font-family: 'Courier New', Courier, monospace;
@@ -217,7 +202,6 @@
     <header>
         <h1>Project Toolsuite</h1>
         <button id="installBtn" class="dark-mode-toggle" style="right: 180px; display: none;">INSTALL APP</button>
-        <button class="dark-mode-toggle" id="themeBtn">Dark Mode</button>
     </header>
 
     <section class="principle-box">
@@ -372,17 +356,7 @@ Your work stays yours.</p>
         `).join('');
     }
 
-    const themeBtn = document.getElementById('themeBtn');
-    themeBtn.onclick = () => {
-        const isDark = document.body.classList.toggle('dark-mode');
-        themeBtn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
-        localStorage.setItem('theme', isDark ? 'dark' : 'light');
-    };
 
-    if (localStorage.getItem('theme') === 'dark') {
-        document.body.classList.add('dark-mode');
-        themeBtn.textContent = 'Light Mode';
-    }
 
     document.getElementById('toolSearch').oninput = renderTools;
 

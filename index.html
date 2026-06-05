@@ -231,6 +231,230 @@ body.dark-mode {
             aside { display: flex; overflow-x: auto; gap: 10px; padding-bottom: 10px; }
             .tag-item { width: auto; white-space: nowrap; }
         }
+        @media (max-width: 768px) {
+            .container { padding: 32px 20px; }
+
+            h1 {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            header {
+                margin-bottom: 40px;
+                padding-bottom: 20px;
+            }
+
+            .dark-mode-toggle,
+            #installBtn {
+                position: static;
+                width: 100%;
+            }
+
+            .dark-mode-toggle {
+                padding: 12px 16px;
+                font-size: .9rem;
+                margin-top: 15px;
+                justify-content: center;
+                box-shadow: 3px 3px 0 var(--border);
+            }
+
+            #installBtn {
+                margin-bottom: 10px !important;
+            }
+
+            .principle-box {
+                padding: 20px;
+                margin-bottom: 40px;
+                border: 2px solid var(--border);
+            }
+
+            .principle-box h2 { font-size: 1.3rem; }
+
+            .mini-cta,
+            .mini-cta-buttons {
+                flex-direction: column;
+            }
+
+            .mini-cta {
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .mini-cta span,
+            .mini-cta-buttons a {
+                text-align: center;
+            }
+
+            .mini-cta-buttons,
+            .mini-cta-buttons a {
+                width: 90%;
+            }
+
+            .workspace {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            aside,
+            .tag-list {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            aside { margin-bottom: 20px; }
+
+            .tag-item {
+                width: auto;
+                padding: 8px 12px;
+                font-size: .85rem;
+                white-space: nowrap;
+            }
+
+            #toolSearch {
+                font-size: 1rem;
+                padding: 14px;
+                margin-bottom: 20px;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 15px;
+            }
+
+            .tool-link {
+                padding: 16px;
+                font-size: .95rem;
+            }
+
+            footer {
+                margin-top: 60px;
+                padding: 30px 0;
+            }
+
+            .footer-links {
+                flex-wrap: wrap;
+                gap: 10px;
+            }
+
+            footer a {
+                font-size: .9rem;
+                padding: 4px 10px;
+            }
+        }
+        @media (max-width: 480px) {
+            .container { padding: 16px 12px; }
+
+            h1 {
+                font-size: 1.6rem;
+                margin-bottom: 15px;
+                letter-spacing: .02em;
+            }
+
+            header {
+                margin-bottom: 30px;
+                padding-bottom: 15px;
+                border-width: 3px;
+            }
+
+            .dark-mode-toggle {
+                padding: 10px 14px;
+                font-size: .8rem;
+                box-shadow: 2px 2px 0 var(--border);
+            }
+
+            .theme-option { gap: 4px; }
+
+            .theme-icon {
+                width: 16px;
+                height: 16px;
+            }
+
+            .principle-box {
+                padding: 16px;
+                margin-bottom: 30px;
+            }
+
+            .principle-box h2 {
+                font-size: 1.1rem;
+                border-width: 2px;
+            }
+
+            .principle-box p {
+                font-size: .95rem;
+                line-height: 1.6;
+                margin: 8px 0;
+            }
+
+            .support-box { margin-bottom: 30px; }
+
+            .mini-cta {
+                padding: 12px;
+                gap: 12px;
+                border-width: 2px;
+            }
+
+            .mini-cta span { font-size: .9rem; }
+
+            .mini-cta-buttons a {
+                font-size: .8rem;
+                padding: 8px 12px;
+            }
+
+            aside h3 {
+                font-size: .7rem;
+                margin-bottom: 8px;
+            }
+
+            .tag-item {
+                padding: 6px 10px;
+                font-size: .75rem;
+                margin-bottom: 6px;
+                border-width: 2px;
+            }
+
+            #toolSearch {
+                font-size: .95rem;
+                padding: 12px;
+                margin-bottom: 15px;
+                border-width: 2px;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+                gap: 10px;
+            }
+
+            .tool-link {
+                padding: 12px;
+                font-size: .85rem;
+                border-width: 2px;
+            }
+
+            .tool-link:hover {
+                transform: translate(-3px, -3px);
+                box-shadow: 4px 4px 0 var(--border);
+            }
+
+            footer {
+                margin-top: 40px;
+                padding: 20px 0;
+            }
+
+            footer p {
+                font-size: .85rem;
+                margin-bottom: 10px;
+            }
+
+            .footer-links { gap: 6px; }
+
+            footer a {
+                font-size: .75rem;
+                padding: 3px 8px;
+                border-width: 1px;
+            }
+        }
+
     </style>
     <script defer src="https://cloud.umami.is/script.js" data-website-id="e2150d65-a009-409f-b3bd-b11afccb3a13"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6760380500809289"
